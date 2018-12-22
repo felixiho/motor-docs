@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Guinea Third-party Motor Insurance Docs</title>
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href=".">Guinea Third-party Motor Insurance Docs</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href=".">Technical Documentation</a>
+                            </li>
+                            <li >
+                                <a href="about/">Non-technical Documentation</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="disabled">
+                                <a rel="next" >
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="about/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#technical-documentation">Technical Documentation</a></li>
+            <li><a href="#tools-and-packages">Tools and Packages</a></li>
+            <li><a href="#getting-started">Getting Started</a></li>
+            <li><a href="#project-layout">Project layout</a></li>
+            <li><a href="#before-you-contribute">Before You Contribute</a></li>
+            <li><a href="#creating-a-new-agent-or-admin">Creating a New Agent or Admin</a></li>
+            <li><a href="#deleting-activation-and-deactivation-of-agents-or-admins">Deleting, Activation and Deactivation of Agents or Admins</a></li>
+            <li><a href="#searching-for-agent-or-user">Searching For Agent or User</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="technical-documentation">Technical Documentation</h1>
+<p>This is the official technical documentation of the <em>Guinea Insurance Third Party Motor Insurance</em>.
+Any Developer looking to contribute to this project is expected to <strong>THOROULY READ THIS BRIEF DOCUMENTATION</strong> first.</p>
+<p>If he/she makes any contribution towards the project, they are expected to update this documentation before lauching.</p>
+<h3 id="tools-and-packages">Tools and Packages</h3>
+<blockquote>
+<p>PHP 7</p>
+<p>Laravel 5.7 </p>
+<p>Javascript/J-Query</p>
+<p><a href="https://github.com/spatie/laravel-permission"> Spatie - Laravel Roles and Permissions</a>.</p>
+</blockquote>
+<h2 id="getting-started">Getting Started</h2>
+<p><strong>To get started on the project, strictly follow the following steps:</strong></p>
+<blockquote>
+<blockquote>
+<p>Clone Repository/Pull latest version of the repository</p>
+<p>Run <code>composer install</code></p>
+<p>If you don't have a <code>.env</code> file already, Do cp <code>.env.example</code> .env</p>
+<p>Configure <code>.env</code> file as well as the files in the config folder to suite your needs</p>
+<p>If you already have a database table, drop all the tables in the database else create a database for the project with name <code>motorthirdpary</code></p>
+<p>Run <code>php artisan migrate</code></p>
+<p>Run <code>php artisan guinea:setup-roles-and-permissions</code></p>
+<p>Run <code>composer dump-autoload</code></p>
+<p>Run <code>php artisan db:seed</code></p>
+<p>Do <code>php artisan cache:forget spatie.permission.cache</code> to clear permissions cache whenever you make changes in the permissions and roles tables in the database. </p>
+</blockquote>
+</blockquote>
+<h2 id="project-layout">Project layout</h2>
+<p>The project follows the conventional Laravel layout with the following styles:</p>
+<blockquote>
+<p>All admin controllers and views are in <code>Controllers/Admin</code> and <code>views/admin</code> (except the auth files which are in the controller and views root of both).</p>
+<p>All agent controllers and views are in Controllers root folder and <code>views/user</code> folder.</p>
+<p>The list of roles and permissions are located in <code>app/Guinea</code>
+</p>
+</blockquote>
+<h2 id="before-you-contribute">Before You Contribute</h2>
+<blockquote>
+<blockquote>
+<p>We are targetting older browsers and as such all Javascript written should be carefully checked for Backwards compatibility with browsers as far as IE 8. If however such JS is to be used, a suitable polyfill should be written.</p>
+<p>Proper consideration and care should be taken before editing or deleting someone else's code.</p>
+<p>Follow the style of variable declaration already existing and only install non-buggy composer dependencies.</p>
+</blockquote>
+</blockquote>
+<h2 id="creating-a-new-agent-or-admin">Creating a New Agent or Admin</h2>
+<p>The process uses the <code>Admin/AddNew</code> controller to perform this act. The view is in the <code>admin/addnew.blade.php</code> file.
+The controller uses a substantial amount of JS files to perform some of its searching and filtering.
+Pagination is done using <code>jquery datatables</code></p>
+<h2 id="deleting-activation-and-deactivation-of-agents-or-admins">Deleting, Activation and Deactivation of Agents or Admins</h2>
+<p>This also uses the <code>Admin/AddNew</code> controller to perform its action. For deleting, all user details are removed permanently.
+The <code>toggleOnlineStatus</code> merely toggles the value in the column <code>flagged</code> which is in the <code>users</code> table. This is used for preventing users who are flagged from performing transactions on the portal.</p>
+<h2 id="searching-for-agent-or-user">Searching For Agent or User</h2>
+<p>This functionality uses jquery to perform its actions.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2018-12-22 18:39:35
+-->
