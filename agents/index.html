@@ -7,11 +7,11 @@
         
         
         
-        <link rel="shortcut icon" href="/img/favicon.ico">
-        <title>Guinea Third-party Motor Insurance Docs</title>
-        <link href="/css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Agent - Guinea Third-party Motor Insurance Docs</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <script src="/js/jquery-1.10.2.min.js" defer></script>
-        <script src="/js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
@@ -39,7 +39,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/.">Guinea Third-party Motor Insurance Docs</a>
+                    <a class="navbar-brand" href="..">Guinea Third-party Motor Insurance Docs</a>
                 </div>
 
                 <!-- Expanded navigation -->
@@ -47,13 +47,13 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li >
-                                <a href="/.">Programmer</a>
+                                <a href="..">Programmer</a>
                             </li>
                             <li >
-                                <a href="/about/">Admin</a>
+                                <a href="../about/">Admin</a>
                             </li>
-                            <li >
-                                <a href="/agents/">Agent</a>
+                            <li class="active">
+                                <a href="./">Agent</a>
                             </li>
                         </ul>
 
@@ -63,21 +63,68 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li >
+                                <a rel="next" href="../about/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a rel="prev" >
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#agent">Agent</a></li>
+            <li><a href="#creating-policy">Creating Policy</a></li>
+            <li><a href="#modify-policy">Modify Policy</a></li>
+            <li><a href="#subagents">SubAgents</a></li>
+            <li><a href="#reports">Reports</a></li>
+            <li><a href="#renew">Renew</a></li>
+        <li class="main "><a href="#reprint">Reprint</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
 
-    <div class="row-fluid">
-      <div id="main-content" class="span12">
-        <h1 id="404-page-not-found" style="text-align: center">404</h1>
-        <p style="text-align: center"><strong>Page not found</strong></p>
-      </div>
-    </div>
-
-
+<h1 id="agent">Agent</h1>
+<h2 id="creating-policy">Creating Policy</h2>
+<p>Follow the steps below to create a new insurance policy:</p>
+<ol>
+<li>Insert a card pin and insert the corresponding Insurance Class.</li>
+<li>Insert the details of the customer.</li>
+<li>Submit application.</li>
+<li>Print Insurance policy. </li>
+</ol>
+<h2 id="modify-policy">Modify Policy</h2>
+<p>To modify a policy details:</p>
+<ol>
+<li>Click on <code>reports</code></li>
+<li>Find the policy and select <code>view</code></li>
+<li>Check the <code>MODIFY CUSTOMER POLICY</code> button on the left side of the page.
+    <img alt="modify" src="../img/modify.png" /></li>
+<li>Change the modify the details and enter reason for modification and submit.</li>
+</ol>
+<h2 id="subagents">SubAgents</h2>
+<p>To view your subagents, click on the sub-agent tab. </p>
+<p>To create a new subagent click on  <code>Create New</code> button and enter the agent's details.</p>
+<p>You can also easily delete or Toggle a subagent by clicking on the button.</p>
+<h2 id="reports">Reports</h2>
+<p>This shows details of all policy created by <code>agent</code> and his <code>subagents</code>. This comes with option to print and copy to excel.</p>
+<h2 id="renew">Renew</h2>
+<p>Steps:</p>
+<ol>
+<li>Enter the registration number of the car.</li>
+<li>The name of the person shows with the insurance class. Enter card pin and <code>verify</code></li>
+<li>Proceed to renew.</li>
+</ol>
+<h1 id="reprint">Reprint</h1>
+<p>Input the registration number or policy number and click on reprint.</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -85,11 +132,11 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "/",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="/js/base.js" defer></script>
-        <script src="/search/main.js" defer></script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">

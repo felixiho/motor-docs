@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Non-technical Documentation - Guinea Third-party Motor Insurance Docs</title>
+        <title>Admin - Guinea Third-party Motor Insurance Docs</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -47,10 +47,13 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li >
-                                <a href="..">Technical Documentation</a>
+                                <a href="..">Programmer</a>
                             </li>
                             <li class="active">
-                                <a href="./">Non-technical Documentation</a>
+                                <a href="./">Admin</a>
+                            </li>
+                            <li >
+                                <a href="../agents/">Agent</a>
                             </li>
                         </ul>
 
@@ -65,8 +68,8 @@
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li class="disabled">
-                                <a rel="prev" >
+                            <li >
+                                <a rel="prev" href="../agents/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -78,21 +81,54 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#non-technical-documentation">Non-technical Documentation</a></li>
+        <li class="main active"><a href="#admin">Admin</a></li>
             <li><a href="#create-new-agents">Create New Agents</a></li>
-            <li><a href="#activatedeactivate-and-delete">Activate/Deactivate and Delete</a></li>
+            <li><a href="#create-new-adminict-marketer-customer-care">Create New Admin(ICT, Marketer, Customer Care)</a></li>
+            <li><a href="#toogle-and-delete">Toogle and Delete</a></li>
+            <li><a href="#upload-cards">Upload Cards</a></li>
+            <li><a href="#cards-management">Cards Management</a></li>
+            <li><a href="#policy-reports">Policy Reports</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="non-technical-documentation">Non-technical Documentation</h1>
+<h1 id="admin">Admin</h1>
 <h2 id="create-new-agents">Create New Agents</h2>
-<p>Navigate to Add new User while logged in as an <strong>ICT STAFF</strong> and click on add new under agents. Fill in the agents details.
-The system should return the auto-generated username and password.
-Note that we expect to send this to the user mail.(Not yet implemented).</p>
-<h2 id="activatedeactivate-and-delete">Activate/Deactivate and Delete</h2>
-<p>All Agents and Admins can be deactivated and deleted also. To deactivate or activate an agent or admin navigate to the respective user type, select the user(s) you wish to toggle their status and then click on the toggle online status button. 
-For deletion of Agents and Admins, You navigate to the delete button under the respective user type and click on it.(This process permanently deletes the agent from the DB along with all their transactions histories. Caution is to be taken)</p></div>
+<p>Navigate to User while logged in as an <strong>ICT STAFF</strong> and click on <code>Create New</code> under <code>Agents</code>. Fill in the agents details.
+The compulsory details are:</p>
+<pre><code>firstname
+lastname
+phone
+email
+</code></pre>
+<p>The system sends the auto-generated username and password to the user mail. </p>
+<h2 id="create-new-adminict-marketer-customer-care">Create New Admin(ICT, Marketer, Customer Care)</h2>
+<p>Navigate to User while logged in as an <strong>ICT STAFF</strong> and click on <code>Create New</code> under <code>ADMINS</code>. Fill in the admin details.
+All details are compulsory.
+The system sends the auto-generated username and password to the user's mail. </p>
+<h2 id="toogle-and-delete">Toogle and Delete</h2>
+<p>To deactivate or activate an agent or admin navigate to the respective user type, select the user(s) you wish to toggle their status and then click on the <code>toggle online status</code> button. </p>
+<p>For deletion of Agents and Admins, You navigate to the <code>delete</code> button under the respective user type and click on it.(This process permanently deletes the agent from the DB along with all their transactions histories. Caution is to be taken).</p>
+<h2 id="upload-cards">Upload Cards</h2>
+<p>To upload cards, go to the section and select the excel file and select <code>upload file</code>. 
+It automatically uploads it to the database.</p>
+<h2 id="cards-management">Cards Management</h2>
+<h3 id="activate-card">Activate Card</h3>
+<p>To do this enter the starting and ending values.
+To activate one card, enter the same starting and ending value for it.</p>
+<h3 id="allocate-card">Allocate Card</h3>
+<p>Select the starting and ending serial of the cards before allocating to an agent. Note that the card must be activated first for this to be successful.</p>
+<h3 id="search-card">Search Card</h3>
+<p>To do this enter the Pin of the card. </p>
+<h2 id="policy-reports">Policy Reports</h2>
+<p>Click on this and select any format. Each format provides an extensive date format option.
+<img alt="date" src="../img/date.png" /></p>
+<h3 id="policy-modifications">Policy Modifications</h3>
+<p>This shows a list of all pending policy modifications. </p>
+<p>When you click on one, if the new details meet the standard, you can accept or decline the request.</p>
+<h3 id="add-vehicles">Add vehicles</h3>
+<p>To add new vehicle make go to <code>Add vehicle make</code> and input the make name.</p>
+<p>To add new vehicle model go to <code>Add vechicle model</code> and select the make before inputing the model name.</p></div>
         </div>
 
         <footer class="col-md-12">
