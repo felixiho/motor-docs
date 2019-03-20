@@ -40,3 +40,8 @@ To do this enter the Pin of the card.
 ## Policy Reports
 Click on this and select any format. Each format provides an extensive date format option.
 ![date](img/date.png)
+
+### Policy Modifications
+This shows a list of all pending policy modifications. 
+
+When you click on one, if the new details meet the standard, you can accept or decline the request.
