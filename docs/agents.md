@@ -34,3 +34,5 @@ Steps:
 2.  The name of the person shows with the insurance class. Enter card pin and `verify`
 3.  Proceed to renew.
 
+# Reprint
+Input the registration number or policy number and click on reprint.
