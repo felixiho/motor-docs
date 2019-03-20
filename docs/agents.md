@@ -22,4 +22,7 @@ To view your subagents, click on the sub-agent tab.
 
 To create a new subagent click on  `Create New` button and enter the agent's details.
 
-You can also easily delete or Toggle a subagent by clicking on the button.'
+You can also easily delete or Toggle a subagent by clicking on the button.
+
+## Reports
+This shows details of all policy created by `agent` and his `subagents`. This comes with option to print and copy to excel.
