@@ -45,3 +45,8 @@ Click on this and select any format. Each format provides an extensive date form
 This shows a list of all pending policy modifications. 
 
 When you click on one, if the new details meet the standard, you can accept or decline the request.
+
+### Add vehicles 
+To add new vehicle make go to `Add vehicle make` and input the make name.
+
+To add new vehicle model go to `Add vechicle model` and select the make before inputing the model name.
