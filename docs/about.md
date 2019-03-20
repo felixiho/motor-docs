@@ -1,6 +1,6 @@
 
 
-# Non-technical Documentation
+# Admin
 
 ## Create New Agents
 Navigate to User while logged in as an **ICT STAFF** and click on `Create New` under `Agents`. Fill in the agents details.

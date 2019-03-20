@@ -1,5 +1,5 @@
 
-# Technical Documentation
+# Programmer 
 
 This is the official technical documentation of the *Guinea Insurance Third Party Motor Insurance*.
 Any Developer looking to contribute to this project is expected to **THOROULY READ THIS BRIEF DOCUMENTATION** first.
