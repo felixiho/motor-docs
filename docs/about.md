@@ -21,3 +21,9 @@ The system sends the auto-generated username and password to the user's mail.
 To deactivate or activate an agent or admin navigate to the respective user type, select the user(s) you wish to toggle their status and then click on the `toggle online status` button. 
 
 For deletion of Agents and Admins, You navigate to the `delete` button under the respective user type and click on it.(This process permanently deletes the agent from the DB along with all their transactions histories. Caution is to be taken).
+
+## Upload Cards
+To upload cards, go to the section and select the excel file and select `upload file`. 
+It automatically uploads it to the database.
+
+
