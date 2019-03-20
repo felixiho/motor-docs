@@ -26,3 +26,11 @@ You can also easily delete or Toggle a subagent by clicking on the button.
 
 ## Reports
 This shows details of all policy created by `agent` and his `subagents`. This comes with option to print and copy to excel.
+
+## Renew
+Steps:
+
+1.  Enter the registration number of the car.
+2.  The name of the person shows with the insurance class. Enter card pin and `verify`
+3.  Proceed to renew.
+
