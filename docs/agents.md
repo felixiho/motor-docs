@@ -17,3 +17,9 @@ To modify a policy details:
     ![modify](img/modify.png)
 4.  Change the modify the details and enter reason for modification and submit.
 
+## SubAgents
+To view your subagents, click on the sub-agent tab. 
+
+To create a new subagent click on  `Create New` button and enter the agent's details.
+
+You can also easily delete or Toggle a subagent by clicking on the button.'
