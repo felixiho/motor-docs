@@ -26,4 +26,13 @@ For deletion of Agents and Admins, You navigate to the `delete` button under the
 To upload cards, go to the section and select the excel file and select `upload file`. 
 It automatically uploads it to the database.
 
+## Cards Management
+### Activate Card
+To do this enter the starting and ending values.
+To activate one card, enter the same starting and ending value for it.
 
+### Allocate Card 
+Select the starting and ending serial of the cards before allocating to an agent. Note that the card must be activated first for this to be successful.
+
+### Search Card
+To do this enter the Pin of the card. 
