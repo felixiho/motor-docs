@@ -36,3 +36,7 @@ Select the starting and ending serial of the cards before allocating to an agent
 
 ### Search Card
 To do this enter the Pin of the card. 
+
+## Policy Reports
+Click on this and select any format. Each format provides an extensive date format option.
+![date](img/date.png)
